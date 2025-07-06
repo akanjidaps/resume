@@ -1,0 +1,80 @@
+body {
+    margin: 3rem;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+
+#links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    text-decoration: underline blue;
+    color: blue;
+}
+
+#pfp {
+    border-radius: 50%;
+}
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width:600px) {
+
+    #info {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    #links {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    #pfp-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #summary, #education, #skills, #work-experience, #certifications {
+        text-align: justify;
+    }
+}
